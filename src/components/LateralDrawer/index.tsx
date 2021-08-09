@@ -18,9 +18,9 @@ export function LateralDrawer() {
   const [activeIcon, setActiveIcon] = useState<number>();
 
   useEffect(() => {
-    if (location.pathname === '/') {
+    if (location.pathname === '/dashboard-template/') {
       setActiveIcon(1);
-    } else if (location.pathname === '/UserPage') {
+    } else if (location.pathname === '/dashboard-template/UserPage') {
       setActiveIcon(2);
     } else {
       setActiveIcon(0);
@@ -43,7 +43,7 @@ export function LateralDrawer() {
         <MenuIconsDiv>
           <DivRowMenu isOpen={isOpen} selected={activeIcon === 1 && isOpen} onClick={() => {
             if (isOpen) {
-              push('/');
+              push('/dashboard-template/');
               setActiveIcon(1);
             }
           }}>
@@ -54,11 +54,11 @@ export function LateralDrawer() {
           </DivRowMenu>
           <DivRowMenu isOpen={isOpen} selected={activeIcon === 2  && isOpen} onClick={() => {
             if (isOpen) {
-              push('/UserPage');
+              push('/dashboard-template/UserPage');
               setActiveIcon(2);
             }
           }}>
-              {(activeIcon === 2 && location.pathname === '/UserPage') ?
+              {(activeIcon === 2 && location.pathname === '/dashboard-template/UserPage') ?
               <img src={personIconBlue} alt="Icone de inicio" width="24px" height="24px" />
               : <img src={personIcon} alt="Icone de usuário" width="24px" height="24px" />}
             <p>Clientes</p>

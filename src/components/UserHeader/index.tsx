@@ -21,7 +21,7 @@ export const UserHeader = () => {
           <img src={searchIcon} alt="Icone de Busca" width="17px" height="17px" />
         </SearchBar>
       </div>
-      <AddUserButton onClick={() => push('/ToAddClient')}>
+      <AddUserButton onClick={() => push('/dashboard-template/ToAddClient')}>
         <div>
           <span></span>
           <span></span>

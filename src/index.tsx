@@ -18,9 +18,9 @@ ReactDOM.render(
       <LateralDrawer/>
       <GrayBoardPages>
         <Switch>
-          <Route path="/" component={HomePage} exact />
-          <Route path="/UserPage" component={UserPage} exact />
-          <Route path="/ToAddClient" component={ToAddClient} />
+          <Route path="/dashboard-template/" component={HomePage} exact />
+          <Route path="/dashboard-template/UserPage" component={UserPage} exact />
+          <Route path="/dashboard-template/ToAddClient" component={ToAddClient} />
         </Switch>
         <Divider />
         <FooterDryve>
